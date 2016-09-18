@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<title>jquery.makeCover</title>
+<meta charset="UTF-8">
+<style>
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body{ background:#ececec; padding:0px; margin: 0; font-family:Arial, Verdana, sans-serif; height:100%;  }
+a img { border:none }
+img{ max-width:100% ; vertical-align:middle; height:auto;  }
+iframe{ width:100%; }
+h1{ text-align: center; font-size: 48px; color: #313131 }
+p{ text-align:center }
+.area{ width:50%; height:350px; height:50vh; margin:0 auto; border:1px solid #e0dada; background:#fff }
+
+</style>
+</head>
+<body>
+
+	<h1>jquery.makeCover</h1>
+	<p>Small jQuery plugin which simulates background-size:cover with img tag</p>
+
+	<br />
+
+	<div class="area">
+	  <div class="cover"><img src="images/eiffel1.jpg" alt="" /></div>
+	</div>
+
+<script src="jquery-1.11.3.min.js"></script>
+<script src="../jquery.makeCover.js"></script>
+<script>
+$(document).ready(function(){
+
+	$('.cover').makeCover(
+	{
+		'positionHorizontal': 'center',	// left, center, right
+		'positionVertical': 'middle', 	// top, middle, bottom
+		'beforeResize': function(){ },
+		'afterResize': function(){ },
+	});
+
+});
+</script>
+
+</body>
+</html>
