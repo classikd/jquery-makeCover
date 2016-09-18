@@ -11,8 +11,6 @@ img{ max-width:100% ; vertical-align:middle; height:auto;  }
 iframe{ width:100%; }
 h1{ text-align: center; font-size: 48px; color: #313131 }
 p{ text-align:center }
-.area{ width:50%; height:350px; height:50vh; margin:0 auto; border:1px solid #e0dada; background:#fff }
-
 </style>
 </head>
 <body>
@@ -22,8 +20,12 @@ p{ text-align:center }
 
 	<br />
 
-	<div class="area">
-	  <div class="cover"><img src="images/eiffel1.jpg" alt="" /></div>
+	<div style="width:50%; height:350px; height:50vh; margin:0 auto">
+
+	  <div class="cover">
+			<img src="images/eiffel1.jpg" alt="" />
+		</div>
+
 	</div>
 
 <script src="jquery-1.11.3.min.js"></script>
@@ -36,7 +38,7 @@ $(document).ready(function(){
 		'positionHorizontal': 'center',	// left, center, right
 		'positionVertical': 'middle', 	// top, middle, bottom
 		'beforeResize': function(){ },
-		'afterResize': function(){ },
+		'afterResize': function(){ }
 	});
 
 });

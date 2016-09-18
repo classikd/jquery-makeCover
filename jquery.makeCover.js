@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         'positionHorizontal': 'center',
   			'positionVertical': 'center',
   			'beforeMove': null,
-  			'afterMove': null,
+  			'afterMove': null
       };
 
   // Constructor
@@ -34,8 +34,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       this.defaults = defaults;
       this.name = pluginName;
       this.init();
-      // console.log(this);
-      // console.log(element instanceof jQuery);
   }
 
 	// Prototype
@@ -87,12 +85,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
            pHeight = $p.height(),
            pWidth = $p.width();
 
-           console.log('cWidth : ', cWidth);
-           console.log('pWidth : ', pWidth);
-
       var cWidthNew = pWidth,
           cHeightNew = Math.round(cWidthNew * cHeight / cWidth);
-
 
       if(cHeightNew < pHeight){
        cWidthNew = Math.round(cWidthNew * pHeight / cHeightNew);
