@@ -8,15 +8,14 @@ Small jQuery plugin which simulates background-size:cover with img tag
 Link the jQuery library and the makeCover file :
 ```html
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="/js/jquery.makeCover.js"></script>
+<script src="js/jquery.makeCover.js"></script>
 ```
 
 #### 2: HTML markup
-Add the class to your image or in a wrapper div.
-Note: The parent div of .cover must have overflow:hidden and a position:relative or absolute.
+Add a class to your image or a wrapper div
 ```html
-<div style="width:300px; height:300px; overflow:hidden; position:relative">
-  <div class="cover"><img src="image.jpg" alt="" /></div>
+<div class="cover">
+  <img src="image.jpg" alt="" />
 </div>
 ```
 
